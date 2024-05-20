@@ -1,3 +1,5 @@
+import deleteImg from '/src/assets/delete.svg';
+
 export function Post({ todo, onDelete, onToggle }) {
   return (
     <div className="post" id={todo.id}>
@@ -11,7 +13,7 @@ export function Post({ todo, onDelete, onToggle }) {
             className={`like__btn ${todo.completed ? "liked" : ""}`}
           ></span>
           <button onClick={onDelete} className="delete__btn">
-            <img src="./src/assets/delete.svg" />
+            <img src={deleteImg} />
           </button>
         </div>
       </div>

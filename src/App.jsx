@@ -5,6 +5,8 @@ import { getNormalizedTodos } from "./utils/get-normalized-todos";
 import { v4 as uuidv4 } from "uuid";
 import { Post } from "./components/Post/Post";
 import "./App.css";
+import flowerImg from '/src/assets/flower.svg';
+import sidebarImg from '/src/assets/sidebarimage.png';
 
 function App() {
   const [todosIds, setTodosIds] = useState(null);
@@ -182,7 +184,7 @@ function App() {
           <div className="sidebox3">blog</div>
           <div className="sideline">
             <div className="ninitial">
-              <img src="./src/assets/flower.svg" />
+              <img src={flowerImg} />
             </div>
             <div className="n">
               <div className="nline" />
@@ -356,7 +358,7 @@ function App() {
             </div>
             <div className="attached" />
             <div className="sidebarimage">
-              <img src="./src/assets/sidebarimage.png" />
+              <img src={sidebarImg} />
             </div>
           </div>
         </div>
