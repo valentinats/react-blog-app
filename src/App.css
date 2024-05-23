@@ -619,11 +619,11 @@ strong {
 
 .like__btn {
   margin-right: 20px;
-  content: url("./src/assets/like.svg");
+  content: url("/src/assets/like.svg");
   zoom: 22%;
   cursor: pointer;
   &.liked {
-    content: url("./src/assets/red-like.svg");
+    content: url("/src/assets/red-like.svg");
   }
 }
 
